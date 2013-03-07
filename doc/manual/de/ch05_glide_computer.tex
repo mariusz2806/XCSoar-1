@@ -26,10 +26,10 @@ auf die erreichbaren Punkt gerechnet wird.
 Ein kleines Symbol in der rechten unteren Ecke zeigt den jeweiligen Flugmodus an:
 
 \begin{tabular}{c c c c}%{c c c c}
-\includegraphics[angle=0,width=0.75cm,keepaspectratio='true']{icons/mode_cruise.pdf} &
-\includegraphics[angle=0,width=0.75cm,keepaspectratio='true']{icons/mode_climb.pdf} &
-\includegraphics[angle=0,width=0.75cm,keepaspectratio='true']{icons/mode_finalglide.pdf} &
-\includegraphics[angle=0,width=0.75cm,keepaspectratio='true']{icons/mode_abort.pdf}\\
+\includegraphics[angle=0,width=0.75cm,keepaspectratio='true']{figures/mode_cruise.png} &
+\includegraphics[angle=0,width=0.75cm,keepaspectratio='true']{figures/mode_climb.png} &
+\includegraphics[angle=0,width=0.75cm,keepaspectratio='true']{figures/mode_finalglide.png} &
+\includegraphics[angle=0,width=0.75cm,keepaspectratio='true']{figures/mode_abbruch.png}\\
 (a) & (b) & (c) & (d)
 \end{tabular}
 
@@ -139,6 +139,11 @@ In diesem Menü können die folgenden Einstellungen vorgenommen werden:
 \item max. Temperatur
 \end{itemize}
 
+
+%\begin{center}
+%\includegraphics[angle=0,width=0.45\linewidth,keepaspectratio='true']{figures/XCS64-Flug-Einstellungen.png}
+%\end{center}
+
 Mithilfe der Mückeneinstellung ('clean') kann während des Fluges nachjustiert werden, wie sich die Polare
 durch Mückenbefall verschlechtert.  Ein Setzen auf 100\% 'clean' bedeutet, daß die Software annimmt,
 das Flugzeug bzw. das Profil ist top sauber. \tip
@@ -149,7 +154,7 @@ der Sinkrate bei der entsprechenden Geschwindigkeit entspricht.
 Die Ballast Einstellungen werden benutzt, um  die Polare entsprechend der Flächenbelastung
 verschieben zu können. Der Ballast wird in Litern angegeben, und sollte \emph{vor} dem Flug
 korrekt angegeben werden.
-\marginpar{\includegraphics[angle=0,width=\linewidth,keepaspectratio='true']{figures/dialog-basicsettings.png}}
+\marginpar{\includegraphics[angle=0,width=\linewidth,keepaspectratio='true']{figures/XCS64-Flug-Einstellungen.png}}
 
 Dieser Dialog kann vor und während des Fluges benutzt werden, um das QNH einzustellen.
 Die Software benutzt diese Werte um während des Fluges die entsprechenden Flugflächen
@@ -216,7 +221,7 @@ Geschwindigkeit permanent angepasst wird.
 
 \begin{maxipage}
 \begin{center}
-\includegraphics[angle=0,width=0.8\linewidth,keepaspectratio='true']{figures/figure_speed_to_fly-de.pdf}
+\includegraphics[angle=0,width=0.8\linewidth,keepaspectratio='true']{figures/figure_speed_to_fly.png}
 \end{center}
 \end{maxipage}
 
@@ -224,7 +229,7 @@ In der Konfigurationseinstellung "Block-Speed-to-fly" (~\ref{sec:final-glide})
 kann eingestellt werden, ob der Delphinstil, oder der "pure" MC-Wert zur
 Berechnung herangezogen werden soll.
 
-Die \infobox{V opt} zeigt ebendiese Geschwindigkeit, je nach
+Die \infobox '' V opt'' zeigt ebendiese Geschwindigkeit, je nach
 ausgewählter Methode an.\index{V opt}
 
 Falls an das VEGA Vario angeschlossen, werden die Töne des Varios im Sollfahrt-Modus
@@ -297,7 +302,7 @@ Derzeit wird diese Höhe noch nicht innerhalb der Berechnungen benutzt, aber fü
 
 \begin{maxipage}
 \begin{center}
-\includegraphics[angle=0,width=\linewidth,keepaspectratio='true']{figures/figure_terrain-de.pdf}
+\includegraphics[angle=0,width=\linewidth,keepaspectratio='true']{figures/figure_terrain.png}
 \end{center}
 \end{maxipage}
 
@@ -389,16 +394,12 @@ Farbe dargestellt; dies dient lediglich der augenblicklcihen Erkennung der Lage.
 \emph{Sollte erreichbare Landepunkte in Reichweite sein, die aktuelle Höhe jedoch nicht ausreichen, um die Aufgabe zu beenden,
 so werden die Pfeile orange angezeigt.}
 
+
 \begin{center}
-\begin{tabular}{c c}
-{\it Drüber} & {\it Drunter} \\
-\includegraphics[angle=0,keepaspectratio='true']{figures/cut-fg-above.png} &
-\includegraphics[angle=0,keepaspectratio='true']{figures/cut-fg-below.png} \\
-\multicolumn{2}{l}{Die Skalierung dieser Pfeile der Endanflugsanzeige beträgt $+/-$ 500 m,} \\
-\multicolumn{2}{l}{darüberhinaus wird die Pfeilspitze abgehoben.}
-\end{tabular}
+\includegraphics[angle=0,width=0.5\linewidth,keepaspectratio='true']{figures/XCS64-Final-Above-Below.png}
 \end{center}
 
+Die Skalierung dieser Pfeile der Endanflugsanzeige beträgt $+/-$ 500 m.
 
 \subsection*{Anzeige der benötigten Endanflugshöhe auf dem Bildschirm}\index{Endanflug, benötigte Höhe, Anzeige}
 
@@ -424,7 +425,7 @@ Hier ein paar Beispiele für verschiedene Szenarien:
 Über dem Endanflugshöhe bei  MC$=M$ und MC$=0$:
 
 Bei der derzeitigen MC Einstellung beträgt die Reserve $132m$ wird auf MC$=0$ umgeschaltet gibt es etwas mehr Reserve.
-\marginpar{\includegraphics[angle=0,width=1.0cm,keepaspectratio='true']{figures/fig-finalglide-allabove.png}}
+\marginpar{\includegraphics[angle=0,width=1.0cm,keepaspectratio='true']{figures/XCS64-Complete-Above.png}}
 
 \item[Über Endanflug]
 
@@ -433,7 +434,7 @@ Bei der derzeitigen MC Einstellung beträgt die Reserve $132m$ wird auf MC$=0$ u
 Hier zeigt  das Display eine Situation, bei der die vorhande Höhe  mit dem eingestellten MC-Wert nicht ausreicht,
 um die Aufgabe zu beenden (roter Pfeil nach unten). Für MC$=0$ jedoch stellt der Rechner das Gelingen
 der Aufgabe in Aussicht (halbtransparenter  Pfeil ganz links nach oben) und gibt dafür eine Reserve von 152$m$ an.
-\marginpar{\includegraphics[angle=0,width=1.0cm,keepaspectratio='true']{figures/fig-finalglide-halfabove.png}}
+\marginpar{\includegraphics[angle=0,width=1.0cm,keepaspectratio='true']{figures/XCS64-Above-0-Below-MC.png}}
 In dieser Situation kann der Pilot entscheiden, ob er den Bart verlässt und den Endanflug
 mit einer geringeren MC-Einstellung fortführt, oder er weitersteigen möchte.
 
@@ -444,14 +445,14 @@ sollte der Bart verlassen werden
 
 \item[Unter Endanflughöhe]
 Unter Endanflughöhe  bei MC$=M$, und etwas weniger als 500m  unterhalb bei MC$=0$
-\marginpar{\includegraphics[angle=0,width=1.0cm,keepaspectratio='true']{figures/fig-finalglide-littlebelow.png}}
+\marginpar{\includegraphics[angle=0,width=1.0cm,keepaspectratio='true']{figures/XCS64-Final-below-0.png}}
 Das Display zeigt an, daß beim aktuellen MC-Wert die Endanflughöhe nicht erreicht ist,
 bei MC$=0$, der jedoch nur weniger als 500m fehlen.
 Mit dem gewählten MC-Wert fehlen satte 733m.
 
 \item[Unter Endanflughöhe]
 Unter Endanflughöhe bei  MC$=M$, und bei MC$=0$
-\marginpar{\includegraphics[angle=0,width=1.0cm,keepaspectratio='true']{figures/fig-finalglide-allbelow.png}}
+\marginpar{\includegraphics[angle=0,width=1.0cm,keepaspectratio='true']{figures/XCS64-Final-below-Complete.png}}
 Die Aufgabe kann so nicht beendet werden, auch nicht bei MC$=0$.
 Die roten Pfeile zeigen, daß eine Außenlandung wahrscheinlich ist,  zu hoch gepokert \texttt{:-(}
 \end{description}
@@ -542,7 +543,7 @@ MC-Theorie.
 \begin{maxipage}
 \centering
 \def\svgwidth{0.8\linewidth}
-\includegraphics[angle=0,width=0.8\linewidth,keepaspectratio='true']{figures/figure_optimal_cruise-de.pdf}
+\includegraphics[angle=0,width=0.8\linewidth,keepaspectratio='true']{figures/figure_optimal_cruise.png}
 \end{maxipage}
 \end{center}
 
@@ -621,7 +622,7 @@ zu Begin des Fluges erheblich unterhalb der Endanflughöhe befindet und der Rech
 
 \begin{maxipage}
 \begin{center}
-\includegraphics[angle=0,width=0.8\linewidth,keepaspectratio='true']{figures/figure_auto_maccready-de.pdf}
+\includegraphics[angle=0,width=0.8\linewidth,keepaspectratio='true']{figures/figure_auto_maccready.png}
 \end{center}
 \end{maxipage}
 
@@ -670,13 +671,13 @@ entsprechenden Geschwindigkeit, wenn der Rechner mit einem intelligenten Vario v
 Dies erlaubt es dem Piloten z.B. Testflüge in ruhiger Luft durchzuführen, um die Flugzeugpolare exakt zu vermessen.
 Wird nun die gemessene mit der eingegebenen Polaren verglichen, erlaubt dies eine optimale Anpassung des
 Programmes an das jeweilige Flugzeug bei der jeweiligen Beladung und dies unter Berücksichtigung der optimalen
-Klappenstellung und anderen Optimierungsversuchen wie z-.B. Ruderspalteabdichtungen etc.
+Klappenstellung und anderen Optimierungsversuchen wie z-.B. Ruderspaltabdichtungen etc.
 
 Die Daten werden ausschließlich erfaßt wenn die G-Rate zwischen 0,9 und 1,1 ist.
 Man sollte also sehr ruhig fliegen, um die Aufzeichnungen nicht zu beeinflussen
 
 \begin{center}
-\includegraphics[angle=0,width=0.65\linewidth,keepaspectratio='true']{figures/analysis-glidepolar.png}
+\includegraphics[angle=0,width=0.65\linewidth,keepaspectratio='true']{figures/XCS64-shot-glidepolar.png}
 \end{center}
 
 \section{Hinweise zum Flug}\index{Hinweise zum Flug}
