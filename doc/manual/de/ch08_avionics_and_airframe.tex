@@ -85,10 +85,14 @@ Hierzu sollte die VEGA Dokumentation im Detail herangezogen werden.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Schalter-Dialog (\textbf{nur} bei VEGA Vario)}
 
-Wenn das VEGA Variometer angeschlossen ist, erscheint gibt es ein zusätzliches Menü für die am VEGA angeschlossenen Schalter und Eingänge. Ohne VEGA ist dieser Menü-Button grau, also nicht verfügbar \menulabel{\bmenut{Konfig}{1/2}\blink\bmenus{Vega}}
+Wenn das VEGA Variometer angeschlossen ist, erscheint gibt es ein zusätzliches
+ \menulabel{\bmenut{Konfig}{1/2}\blink\bmenus{Vega}}
+Menü für die am VEGA angeschlossenen Schalter und Eingänge. Ohne VEGA ist dieser Menü-Button grau, also nicht verfügbar. 
 
-Dieser Dialog wird in Echtzeit aktualisiert, so daß der Pilot direkt nachverfolgen kann, wie seine Meldung verarbeitet wird und ob diese korrekt sind. 
-Sinnvoll z.B. bei einem Klappencheck vor dem \menulabel{~~~~~~~~~~~~~~\bmenut{Flugzeug}{Schalter}}Start.
+
+Dieser Dialog wird in Echtzeit aktualisiert, so daß der Pilot \menulabel{~~~~~~~~~~~~~~\bmenut{Flugzeug}{Schalter}} direkt 
+nachverfolgen kann, wie seine Meldung verarbeitet wird und ob diese korrekt sind. 
+Sinnvoll z.B. bei einem Klappencheck vor dem Start.
 
 
 \begin{center}
@@ -97,10 +101,12 @@ Sinnvoll z.B. bei einem Klappencheck vor dem \menulabel{~~~~~~~~~~~~~~\bmenut{Fl
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Slave Modus, Doppelsitzermodus, Durchschleifen von Daten}\index{Slave-mode}\index{Dosi-Modus}
 
-Einer der im NMEA-Anschluß Menü befindlichen Treiber (''NMEA-Output'') bietet den sog.\  ''Slave-Modus'', welcher verwendet werden kann,  um z.B. zwei Geräte  (\al oder \textsf{PDA})  im Master-Slave Modus miteinander zu verbinden. \menulabel{\bmenut{Konfig}{3/3}\blink\\,bmenus{NMEA Anschluss}}
-
-Im als Master definierten Gerät muß dazu der Treiber des zweiten  Gerätes (Gerät B) als NMEA OUT gesetzt werden.
-\menulabel{\button{Einstellung}\blink\,\button{NMEA Anschluss}}
+Einer der im NMEA-Anschluß Menü befindlichen Treiber (''NMEA-Output'')
+bietet den 
+\menulabel{\bmenut{Konfig}{3/3}\blink\,\bmenut{NMEA}{Anschluss}} 
+sog.\  ''Slave-Modus'', welcher verwendet werden kann,  um z.B. zwei Geräte  (\al oder \textsf{PDA})  im Master-Slave Modus miteinander zu verbinden. 
+\menulabel{\qquad\quad\blink\,\button{Einstellung}} 
+Im als Master definierten Gerät muß dazu unter \button{NMEA Anschluss}der Treiber des zweiten  Gerätes (Gerät B) als NMEA OUT gesetzt werden.
 Hierdurch werden alle ein- und ausgehenden Datensätze  durchgeschleift und an das als Slave definierte Gerät weitergereicht.
 Im Slave-Gerät muß dann als Gerät A z.B.\ \fl als Treiber angewählt werden.
 
