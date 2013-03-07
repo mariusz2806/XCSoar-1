@@ -1,6 +1,7 @@
 \chapter{Navigation}\label{cha:navigation}
 
-In diesem Kapitel wird die ''moving map'' beschreiben, welche einen elementarer Bestandteil von \xc zur Navigation darstellt und heute selbstverständlich ist. Weiterhin werden hier die entsprechenden Elemente beschrieben, welche auf der Karte eingeblendet sind um die Navigation so schnell und einfach wie möglich zu machen.
+In diesem Kapitel wird die ''moving map'' beschreiben, welche einen elementaren Bestandteil von \xc zur Navigation darstellt und heute selbstverständlich ist. 
+Weiterhin werden hier die entsprechenden Elemente beschrieben, welche auf der Karte eingeblendet sind um die Navigation so schnell und einfach wie möglich zu machen.
 
 \section{Elemente der Kartenanzeige}
 
@@ -13,8 +14,8 @@ Die moving-map zeigt folgende Bestandteile:
 \begin{enumerate}[itemsep=-0.25ex]
   \item Das Segelflugzeug Symbol
   \item Die Wegpunkte
-  \item Die aktive Flugaufgabe (task)
-  \item Den Kurs zum gewählten Wegpunkt (bearing)
+  \item Die aktive Flugaufgabe (''task'')
+  \item Den Kurs zum gewählten Wegpunkt (''bearing'')
      (\footnote{Der Kurs zum nächsten Wegpunkt kann auch eine {\em Route} sein, wie es im Abschnitt~\ref{sec:route} beschrieben wird.})
     \item Die Lufträume
   \item Die Landkarte und die Topologie (Straßen, Flüsse, Seen)
@@ -72,9 +73,10 @@ Die Zahl gibt hierbei die Gesamtbreite des Bildschirmes an.
 Für \textsc{Compaq Aero} Benutzer: Wenn Ihr die \textsl{Compaq Aero Game Keys} aktiviert (im Q-Menü), können auch diese für das Hinein- und Herauszoomen benutzt werden.\index{Zoom!Maßstab}
 
 \subsection*{Steigflug Zoom}
-Es besteht die Möglichkeit, zwei Zoom Einstellung zu haben: einer, wenn der Segelflieger beim Kurbeln ist, und ein weiterer welcher für den Überlandflug bzw. Endanflugmodus gültig ist.
+Es besteht die Möglichkeit, zwei Zoom Einstellung zu wählen: 
 
-Dies ist die ''Steigflug Zoom'' Einstellung, welche unter \config{circlingzoom} eingestellt werden kann.\index{Zoom!Steigflug}
+einer, wenn der Segelflieger beim Kurbeln ist, und ein weiterer welcher für den \config{circlingzoom}\index{Zoom!Steigflug} Überlandflug bzw. Endanflugmodus gültig ist.
+
 
 Als Standardmaßstab für die ''Steigflug Zoom'' Einstellung ist abhängig  von der Displaygröße ein Kartenmaßstab von 2,5 - 5 km voreingestellt.
 Wenn während des Kurbelns hinein oder herausgesucht wird, so beeinflußt dies nicht den vorher im Grabe Ausflug eingestellten zu den Zoom-Maßstab. Sowie das kurbeln beendet wird, wird automatisch auf den vorher eingestellten Maßstab zurückgesetzt.
@@ -89,7 +91,7 @@ Um Auto-Zoom einzuschalten, benutze links angegebenes Menü
 %\smenus{Anzeige}\blink\smenut{Zoom}{Auto}
 %\end{quote}
 \menulabel{\bmenut{Anzeige}{1/2}\blink\bmenut{Zoom}{Auto}}
-Nachdem ein Wegpunkt sich geändert hat (automatisch, über die Wegpunkt Auswahl, oder durch manuelles Umschalten auf der Karte) wird Auto-Zoom den Maßstab automatisch so wählen, daß der nächste Wegpunkt sichtbar ist. Während des Kurbelns, wenn ein Bart entdeckt wurde, wird die Karte zentriert bezüglich des Bartes dargestellt, sodaß das Flugzeugsymbol dennoch sichtbar bleibt.
+Nachdem sich ein Wegpunkt geändert hat (sei es automatisch, über die Wegpunkt Auswahl, oder durch manuelles Umschalten auf der Karte) wird ''Auto-Zoom'' den Maßstab automatisch so wählen, daß der nächste Wegpunkt sichtbar ist. Während des Kurbelns wird die Karte zentriert bezüglich des Bartes dargestellt, sodaß das Flugzeugsymbol dennoch sichtbar bleibt.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Verschieben der Karte - Verschiebe-Modus}\index{Karte!Verschieben}\index{Pan-Mode}
@@ -126,22 +128,22 @@ Parallel dazu werden in der oberen rechten Bildschirmecke die Koordinaten des Fa
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Wegpunkte} \label{sec:waypoint-schemes}
-Die Darstellung und Einfärbung von Wegpunkten erfolgt je nach Situation und Art des jeweiligen Punktes.\menulabel{\bmenut{Konf}{2/3}\blink\bmenus{System}} Hauptmerkmal ist die hierbei Landbarkeit bzw. Erreichbarkeit eines Wegpunktes.  Es gibt verschiedene Sätze für die Darstellung von landbaren Wegpunkten  (Lila Punkt, Schwarz Weiß und Ampel), die unter \index{Wegpunkte!Farben}
+Die Darstellung und Einfärbung von Wegpunkten erfolgt je nach Situation und Art des jeweiligen Punktes.\menulabel{\bmenut{Konf}{2/3}\blink\bmenus{System}} Hauptmerkmal ist die hierbei Landbarkeit bzw. Erreichbarkeit eines Wegpunktes.  Es gibt derzeit drei verschiedene Icon- Sätze  für die Darstellung von landbaren Wegpunkten  (Lila Punkt, Schwarz Weiß und Ampel), die unter \index{Wegpunkte!Farben}
 %\begin{quote}
 %\smenus{Konfig.}\blink\smenus{Konfig.}\blink\smenut{System}%{Einstellung}\blink\seite{4}
 %\end{quote}
-\button{Landbare Symbole} eingestellt werden können.\menulabel{\button{Kartenanzeige}\blink\button{Wegpunkte}}\index{Wegpunkte!Darstellung}
+\button{Landbare Symbole} ausgewählt werden können.\menulabel{\button{Kartenanzeige}\blink\button{Wegpunkte}}\index{Wegpunkte!Darstellung}
 
 Die Symbole sind in untenstehender Tabelle aufgelistet. 
 \begin{description}
    \item[Lila Punkt] Bei dieser Darstellung werden die landbaren Plätze als lila Punkt angezeigt. Wenn der Wegpunkt erreichbar ist, bekommt der lila Punkt einen grünen Kreis.  Diese Darstellung ist sehr ähnlich der in WinPilot
-   \item[S/W] \config{waypointicons} Landbare Wegpunkte werden in der karte weiß/grau dargestellt, ähnlich wie oben bekommen erreichbare Plätze einen grünen Punkt, ist er durch einen Berg versperrt, wird er rot. 
+   \item[S/W] \config{waypointicons} Landbare Wegpunkte werden in der Karte weiß/grau dargestellt, ähnlich wie oben bekommen erreichbare Plätze einen grünen Punkt, ist er durch einen Berg versperrt, wird er rot. 
    \item[Verkehrsampel] Flugplätze und Außenlandefelder werden in den Farben einer Verkehrsampel dargestellt: Grün, wenn erreichbar, Orange, wenn z.B.\ durch einen Berg versperrt und rot, wenn er überhaupt nicht erreicht werden kann.
 \end{description}
 
 \tip Je nach verwendeter Datenbank kann auch die Länge und Richtung der Landebahn mit angezeigt werden. 
 %\begin{center}
-%\includegraphics[angle=0,width=0.5\linewidth,keepaspectratio='true']%{figures/possiblewaypoints.png}
+%\includegraphics[angle=0,width=0.45\linewidth,keepaspectratio='true'{figures/possiblewaypoints.png}
 %\end{center}
 
 %\begin{tabular}{c|c|cc|cc|}
@@ -375,7 +377,7 @@ Mit dem Button \button{Flug} kann z.B. schnell Deine Position an andere
 weitergegeben werden, hier wird Deine Position angezeigt, Deine Peilung und Entfernung auf den nächsten aktiven Wegpunkt etc. 
 
 
-Derzeit werden als ''nächste Wegpunkte'' ausschließlich Punkte aus der Wegpunkt-Datenbank genommen, in zukünftigen Versionen ist geplant, evtl.\  auch Dörfer und Städte aufzunehmen.\menulabel{\includegraphics[angle=0,width=0.8\linewidth,keepaspectratio='true']{figures/status-dialog.png}}
+Derzeit werden als ''nächste Wegpunkte'' ausschließlich Punkte aus der Wegpunkt-Datenbank genommen, in zukünftigen Versionen ist geplant, evtl.\  auch Dörfer und Städte aufzunehmen.\menulabel{\includegraphics[angle=0,width=0.8\linewidth,keepaspectratio='true']{figures/status-flight.png}}
 
 Unter \button{Regeln} kannst Du z.B.\ erkennen, ob Dein Abflug gültig war, mit welcher Geschwindigkeit er erfolgte etc.\ 
 
@@ -409,7 +411,7 @@ Es kann sein, daß manche Routen in einer Ankunft am Ziel höher als erwartet en
 Richtig deklarierte Routen werden im Flugverlauf über oder unterhalb Lufträumen und auf jeden Fall um Lufträume herum führen.
 
 \warning
-Wenn der MacCready-Wert größer als 0, dann ist Steigend während einer Route gemäß der MC-Theorie ''erlaubt''. \config{routeceiling}  Die maximale Höhe des Steigens  ist auf  500 m unterhalb der Wolkenuntergrenze limitiert, kann jedoch in der Konfiguration abgeschaltet werden.
+Wenn der MacCready-Wert größer als 0, dann ist für den Rechner das Steigend während einer Route gemäß der MC-Theorie ''erlaubt''. \config{routeceiling}  Die maximale Höhe des Steigens  ist auf  500 m unterhalb der Wolkenuntergrenze limitiert, kann jedoch in der Konfiguration abgeschaltet werden.
 
 Ein Steigen über die maximal vorgeschriebene Höhe des Start- und Zielpunktes (siehe oben) wird ''bestraft'' mit einer entsprechend schlechteren Steigrate als der aktuell eingestellte MacCready-Wert. 
 
@@ -424,4 +426,4 @@ Hintergrund: eine Einstellung von  MacCready gleich 0 bedeutet, daß (streng nac
 \item Kurven und Schlenker zwischen den einzelnen Streckensegmenten mit Ablagen größer 90$^\circ$ sind erlaubt
 \item Fehler des Rechenalgorithmus innerhalb der Route können dazu führen, daß der Anflug in einem direkten Anflug auf das Ziel zurückgeführt wird.
 \end{itemize}
-%finished für v6.5 date 09/02/2013 OH
+%finished für v6.5 date 16/02/2013 OH
